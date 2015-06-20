@@ -8,3 +8,7 @@ type HelloController struct {
 	model HelloModel
 	view  HelloView
 }
+
+func (c *HelloController) Index() string {
+	return "Hello World"
+}
