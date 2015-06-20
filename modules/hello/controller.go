@@ -20,3 +20,7 @@ func (c *HelloController) SayHelloTo(name string) string {
 func (c *HelloController) Greeting() string {
 	return "Greetings"
 }
+
+func (c *HelloController) Template() string {
+	return c.view.RenderTemplateAsString("sample", nil)
+}
