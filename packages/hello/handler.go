@@ -11,6 +11,8 @@ func init() {
 	module.DefaultMethod("index")
 	module.RegisterRequestHandler(serve)
 	module.SetAsDefault()
+
+	module.ForwardPermalinkToMethod("/greet", "greeting")
 }
 
 func serve(w http.ResponseWriter, r *http.Request) {
