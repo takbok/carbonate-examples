@@ -1,9 +1,9 @@
 package hello
 
-import "bitbucket.org/takbok/brahma"
+import "bitbucket.org/carbonate/carbonate"
 
 type HelloController struct {
-	brahma.BaseController
+	carbonate.BaseController
 
 	model HelloModel
 	view  HelloView

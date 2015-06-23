@@ -3,8 +3,8 @@ package hello
 import (
 	"net/http"
 
-	"bitbucket.org/takbok/brahma"
-	"bitbucket.org/takbok/brahma/module"
+	"bitbucket.org/carbonate/carbonate"
+	"bitbucket.org/carbonate/carbonate/module"
 )
 
 func init() {
@@ -19,5 +19,5 @@ func serve(w http.ResponseWriter, r *http.Request) {
 	var c HelloController
 	c.SetModelAndView(&c.model, &c.view)
 
-	brahma.DispatchRequestViaURL(r.URL.Path, &c, &w, &r)
+	carbonate.DispatchRequestViaURL(r.URL.Path, &c, &w, &r)
 }

@@ -1,7 +1,7 @@
 package hello
 
-import "bitbucket.org/takbok/brahma"
+import "bitbucket.org/carbonate/carbonate"
 
 type HelloModel struct {
-	brahma.BaseModel
+	carbonate.BaseModel
 }
